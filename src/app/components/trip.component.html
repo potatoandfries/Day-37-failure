@@ -1,0 +1,30 @@
+<form [formGroup]="form" (submit)="process()">
+    <table>
+      <tr>
+        <td>
+          <label>Date:</label>
+          <input type="date" formControlName="date" size="20">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Text:</label>
+          <input type="text" formControlName="text" size="20">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Type:</label>
+          <input type="radio" formControlName="type" value="Travel"> Travel
+          <input type="radio" formControlName="type" value="Romance"> Romance
+          <input type="radio" formControlName="type" value="Weekend"> Weekend
+          <input type="radio" formControlName="type" value="Hobbies"> Hobbies
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button type="submit">Submit</button>
+        </td>
+      </tr>
+    </table>
+  </form>
